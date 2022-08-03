@@ -1,32 +1,23 @@
 package Matrix;
-import java.util.Scanner;
-public class Multiplication_Two_matrix {
+
+public class two_matrix_multiplication {
 
 	public static void main(String[] args) {
-		Scanner scan=new Scanner(System.in);
-		
-		System.out.println("Enter the 1st Row Size");
-        int r1=scan.nextInt();
-        
-        System.out.println("Enter the 1st column Size");
-        int c1=scan.nextInt();
-        
+		Scanner sc=new Scanner(System.in);
+        int r1=sc.nextInt();
+        int c1=sc.nextInt();
         int a[][]=new int[r1][c1];
         for(int i=0;i<r1;i++){
             for(int j=0;j<c1;j++){
-             a[i][j]=scan.nextInt();   
+             a[i][j]=sc.nextInt();   
             }
         }
-        
-        System.out.println("Enter the 2nd Row Size");
-       int r2=scan.nextInt();
-       
-       System.out.println("Enter the 2nd Column Size");
-        int c2=scan.nextInt();
+       int r2=sc.nextInt();
+        int c2=sc.nextInt();
         int b[][]=new int[r2][c2];
         for(int i=0;i<r2;i++){
             for(int j=0;j<c2;j++){
-             b[i][j]=scan.nextInt();   
+             b[i][j]=sc.nextInt();   
             }
         }
         
@@ -45,7 +36,6 @@ public class Multiplication_Two_matrix {
        }
         
         }
-        System.out.println("After Multiplication :--");
             for(int i=0;i<r1;i++){
             for(int j=0;j<c2;j++){
         
